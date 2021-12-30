@@ -12,7 +12,7 @@ from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, Callback
 bot = telebot.TeleBot(subForPy.TOKEN)#---
 #----------------Переменные-для-юзера-----------------
 name = 'Tom'         #--Я был ответсвеннен за создание переменных для пользователя, а также такого элемента как стаистика, в общем, контента(места см.ниже)
-surname = 'Bouble'
+surname = 'Bouble'   
 age = 0
 points = 100
 #--------------------Путь-к-фото----------------------
@@ -229,7 +229,7 @@ def callback_inline(call):
 bot.polling(non_stop=True)
 
 
-
+#---Рассматривалась идея добавления системы рейтингов, но в итоге, так и не была реализована
 
 
 
