@@ -1,4 +1,3 @@
-#в данном файле я постарался как можно подробно описать все наши шаги
 import telebot #---Подключение библиотек
 import subForPy
 import random
@@ -9,10 +8,10 @@ from telebot import types
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, CallbackContext
 
-bot = telebot.TeleBot(subForPy.TOKEN)#---
+bot = telebot.TeleBot(subForPy.TOKEN)
 #----------------Переменные-для-юзера-----------------
 name = 'Tom'         #--Я был ответсвеннен за создание переменных для пользователя, а также такого элемента как стаистика, в общем, контента(места см.ниже)
-surname = 'Bouble'   
+surname = 'Bouble'
 age = 0
 points = 100
 #--------------------Путь-к-фото----------------------
@@ -229,7 +228,7 @@ def callback_inline(call):
 bot.polling(non_stop=True)
 
 
-#---Рассматривалась идея добавления системы рейтингов, но в итоге, так и не была реализована
+
 
 
 
